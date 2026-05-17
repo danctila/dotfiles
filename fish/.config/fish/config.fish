@@ -19,3 +19,12 @@ fish_add_path ~/go/bin
 
 # Starship
 starship init fish | source
+
+# Functions
+function computer
+    set prompt (string join " " $argv)
+
+    gh copilot --prompt="Answer in concise Markdown. Put commands in fenced bash code blocks. Do not add extra fluff. $prompt" \
+    2>/dev/null \
+    | glow --style dark --width 100
+end
