@@ -95,9 +95,9 @@ gui:
     switchToFilesAfterStashApply: true
     switchTabsWithPanelJumpKeys: false
 git:
-    pagers:
-        - pagerCommand: delta --paging=never
-          pattern: .*
+    paging:
+        colorArg: always
+        pager: delta --paging=never --line-numbers
     commit:
         signOff: false
         autoWrapCommitMessage: true
