@@ -97,7 +97,7 @@ gui:
 git:
   pagers:
     - colorArg: always
-      pager: delta --paging=never --line-numbers --side-by-side
+      pager: delta --paging=never --line-numbers --side-by-side --features=colibri
   commit:
     signOff: false
     autoWrapCommitMessage: true
@@ -134,6 +134,8 @@ git:
   localBranchSortOrder: date
   remoteBranchSortOrder: date
   truncateCopiedCommitHashesTo: 12
+os:
+  openCommand: 'nvim {{filename}}'
 update:
   method: prompt
   days: 14
