@@ -145,7 +145,11 @@ refresher:
 confirmOnQuit: false
 quitOnTopLevelReturn: false
 disableStartupPopups: false
-customCommands: []
+customCommands:
+  - key: o
+    context: files
+    command: 'open -a Cursor "{{.SelectedFile.Name}}"'
+    description: Open file in Cursor
 services: {}
 notARepository: prompt
 promptToReturnFromSubprocess: true
