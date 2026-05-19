@@ -135,7 +135,7 @@ git:
   remoteBranchSortOrder: date
   truncateCopiedCommitHashesTo: 12
 os:
-  openCommand: 'nvim {{filename}}'
+  editPreset: 'nvim'
 update:
   method: prompt
   days: 14
