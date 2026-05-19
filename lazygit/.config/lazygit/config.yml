@@ -96,9 +96,8 @@ gui:
     switchTabsWithPanelJumpKeys: false
 git:
     pagers:
-        diff: delta --paging=never
-        patch: delta --paging=never
-        log: delta --paging=never
+        - pagerCommand: delta --paging=never
+          pattern: .*
     commit:
         signOff: false
         autoWrapCommitMessage: true
