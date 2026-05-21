@@ -21,5 +21,8 @@ fish_add_path ~/.local/bin
 # Starship
 starship init fish | source
 
+# Zoxide
+zoxide init fish | source
+
 # Binds
 bind \b backward-kill-word
