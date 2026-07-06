@@ -17,6 +17,7 @@ source ~/.orbstack/shell/init2.fish 2>/dev/null || :
 
 fish_add_path ~/go/bin
 fish_add_path ~/.local/bin
+fish_add_path ~/.npm-global/bin
 
 # Starship
 starship init fish | source
