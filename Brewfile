@@ -41,6 +41,10 @@ brew "gnupg"
 brew "gum"
 # Tools and libraries to manipulate images in select formats
 brew "imagemagick"
+# Development kit for the Java programming language
+brew "openjdk"
+# Dex to Java decompiler
+brew "jadx"
 # Interactive environments for writing and running code
 brew "jupyterlab"
 # Simple terminal UI for git commands
@@ -57,8 +61,6 @@ brew "neovim"
 brew "node@22"
 # Manage multiple Node.js versions
 brew "nvm"
-# Development kit for the Java programming language
-brew "openjdk"
 # PDF rendering library (based on the xpdf-3.0 code base)
 brew "poppler"
 # Persistent key-value database, with built-in net interface
@@ -85,6 +87,8 @@ brew "wget"
 brew "zellij"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
+# Android SDK component
+cask "android-platform-tools"
 # Desktop password and login vault
 cask "bitwarden"
 # Terminal-based AI coding assistant
