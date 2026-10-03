@@ -81,6 +81,8 @@ brew "temporal"
 brew "toilet"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
+# Command-line interface for Vercel
+brew "vercel"
 # Internet file retriever
 brew "wget"
 # Pluggable terminal workspace, with terminal multiplexer as the base feature
@@ -106,6 +108,7 @@ vscode "esbenp.prettier-vscode"
 vscode "evzen-wybitul.magic-racket"
 vscode "github.codespaces"
 vscode "golang.go"
+vscode "google.colab"
 vscode "hermitter.oh-lucy-vscode"
 vscode "ironm00n.magic-racket-student"
 vscode "johnpapa.winteriscoming"
