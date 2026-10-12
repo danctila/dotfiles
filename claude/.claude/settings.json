@@ -1,0 +1,59 @@
+{
+  "includeCoAuthoredBy": false,
+  "model": "sonnet",
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "^(startup|resume|clear|compact|fork)$",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash '/Users/danctil/.claude/hooks/herdr-agent-state.sh' session",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "~/.claude/statusline/statusline.sh"
+  },
+  "enabledPlugins": {
+    "figma@claude-plugins-official": true,
+    "github@claude-plugins-official": true,
+    "skill-creator@claude-plugins-official": true,
+    "airtable@claude-plugins-official": true,
+    "voltagent-biz@voltagent-subagents": true,
+    "voltagent-research@voltagent-subagents": true,
+    "playwright@claude-plugins-official": true,
+    "firecrawl@claude-plugins-official": true
+  },
+  "extraKnownMarketplaces": {
+    "voltagent-subagents": {
+      "source": {
+        "source": "github",
+        "repo": "VoltAgent/awesome-claude-code-subagents"
+      }
+    },
+    "thedotmack": {
+      "source": {
+        "source": "github",
+        "repo": "thedotmack/claude-mem"
+      }
+    },
+    "mem0-plugins": {
+      "source": {
+        "source": "github",
+        "repo": "mem0ai/mem0"
+      }
+    }
+  },
+  "effortLevel": "high",
+  "modelSettings": {
+    "claude-opus-5-5": {
+      "effortLevel": "high"
+    }
+  },
+  "showTurnDuration": true
+}
