@@ -6,6 +6,7 @@ Personal configuration files and setup for macOS development environment.
 
 - **Brewfile** - Homebrew packages, CLI tools, applications, and VS Code extensions
 - **install.sh** - Installation script to bootstrap packages from Brewfile
+- **claude/** - Claude Code global instructions and skills
 - **fish/** - Fish shell configuration
 - **git/** - Git configuration
 - **kitty/** - Kitty terminal emulator theme and settings
@@ -26,7 +27,7 @@ To link specific configuration files, use [GNU Stow](https://www.gnu.org/softwar
 
 ```bash
 # Link all configs
-stow fish git kitty lazygit zellij
+stow claude fish git kitty lazygit zellij
 
 # Or link specific packages
 stow fish
