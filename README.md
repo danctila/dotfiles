@@ -27,14 +27,22 @@ To link specific configuration files, use [GNU Stow](https://www.gnu.org/softwar
 
 ```bash
 # Link all configs
-stow claude fish git kitty lazygit zellij
+stow -t ~ claude fish git kitty lazygit zellij
 
 # Or link specific packages
-stow fish
-stow kitty
+stow -t ~ fish
+stow -t ~ kitty
 ```
 
-Stow will create symlinks in your home directory (`~/.config/`) pointing to the config files in this repository.
+Stow will create symlinks in your home directory (`~/.config/`) pointing to the config files in this repository. `-t ~` is needed because stow otherwise targets the parent of this folder.
+
+## Secrets
+
+Secrets are not in this repo. Create `~/.config/fish/conf.d/secrets.fish` by hand on each machine (it is gitignored):
+
+```fish
+set -gx GITHUB_PERSONAL_ACCESS_TOKEN <token>
+```
 
 ## Tools
 
