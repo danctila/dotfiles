@@ -67,6 +67,8 @@ brew "poppler"
 brew "redis"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
+# Audio time stretcher tool and library
+brew "rubberband"
 # Cross-shell prompt for astronauts
 brew "starship"
 # Organize software neatly under a single directory tree (e.g. /usr/local)
@@ -81,6 +83,8 @@ brew "temporal"
 brew "toilet"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
+# Extremely fast Python package installer and resolver, written in Rust
+brew "uv"
 # Command-line interface for Vercel
 brew "vercel"
 # Internet file retriever
