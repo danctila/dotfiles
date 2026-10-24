@@ -1,3 +1,6 @@
+# Homebrew: put /opt/homebrew/bin ahead of /usr/bin (otherwise it lands last via /etc/paths.d)
+/opt/homebrew/bin/brew shellenv fish | source
+
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 if test -f /opt/anaconda3/bin/conda
